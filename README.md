@@ -5,7 +5,7 @@ Home: https://github.com/Erotemic/xdoctest
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A rewrite of Python's builtin doctest module without all the weirdness (with pytest plugin integration)
 
