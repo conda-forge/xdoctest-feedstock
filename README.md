@@ -5,9 +5,13 @@ Home: https://github.com/Erotemic/xdoctest
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xdoctest-feedstock/blob/master/LICENSE.txt)
 
 Summary: A rewrite of Python's builtin doctest module without all the weirdness (with pytest plugin integration)
+
+Development: https://github.com/Erotemic/xdoctest
+
+Documentation: http://xdoctest.readthedocs.io/
 
 The xdoctest package is a re-write of Python's builtin doctest module.
 It replaces the old regex-based parser with a new abstract-syntax-tree
