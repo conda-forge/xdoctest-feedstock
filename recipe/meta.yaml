@@ -1,5 +1,5 @@
 {% set name = "xdoctest" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f0a184d403b69b166ebec1aadb13c98c96c59101e974ae2e4db4c3a803ec371
+  sha256: 042b9529d8b54a8d413ad1d65daa5a9200dbc6c4b96ac42a63b31446e54d2c6b
 
 build:
   noarch: python
