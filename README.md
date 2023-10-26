@@ -1,11 +1,11 @@
-About xdoctest
-==============
+About xdoctest-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xdoctest-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Erotemic/xdoctest
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xdoctest-feedstock/blob/main/LICENSE.txt)
 
 Summary: A rewrite of Python's builtin doctest module without all the weirdness (with pytest plugin integration)
 
