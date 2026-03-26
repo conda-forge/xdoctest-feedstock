@@ -38,6 +38,7 @@ requirements:
 
 test:
   requires:
+    - pyflakes >=2.2.0
     - python {{ python_min }}
     - pytest >=6.25
     - pytest-cov >=3.0
