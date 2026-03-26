@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - xdoctest = xdoctest.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -23,16 +23,35 @@ requirements:
     - setuptools >=41.0.1
   run:
     - python >={{ python_min }}
+  run_constrained:
+    - attrs >=19.2.0
+    - debugpy >=1.6.0
+    - ipykernel >=6.0.0
+    - ipython >=7.23.1
+    - ipython_genutils >=0.2.0
+    - jedi >=0.16.0
+    - jupyter_client >=7.0.0
+    - jupyter_core >=4.7.0
+    - nbconvert >=6.1.0
+    - pyflakes >=2.2.0
+    - pygments >=2.15.1
 
 test:
   requires:
     - python {{ python_min }}
+    - pytest >=6.25
+    - pytest-cov >=3.0
+    - tomli >=0.2.0
+  source_files:
+    - pytest.ini
+    - tests
   imports:
     - xdoctest
     - xdoctest.docstr
     - xdoctest.utils
   commands:
     - xdoctest --help
+    - pytest -k "not test_run_binary_doctests"
 
 about:
   home: https://github.com/Erotemic/xdoctest
